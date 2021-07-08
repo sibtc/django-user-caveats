@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>Django Signup Example</title>
+</head>
+<body>
+
+  <h1>Sign up form</h1>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div>
+      <input type="submit" value="Sign up">
+    </div>
+  </form>
+
+</body>
+</html>
